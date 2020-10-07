@@ -1,0 +1,17 @@
+.tabs a{
+    color: #2654EB;
+}
+
+.tabs .indicator {
+    color: #2654EB;
+}
+
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #0f2233;
+    outline: none;
+}
+
+.col .row {
+    margin-right : 0px;
+}

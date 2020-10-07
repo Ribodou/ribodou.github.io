@@ -1,1 +1,121 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Lucas Robidou - personal INRIA page</title>
+    <link rel="icon" href="{% static 'RD4F/img/icone.jpg' %}"> <!-- TODO: change it -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+</head>
+
+<body class="mybody">
+    <header class="myheader">
+        <div class="navbar-fixed">
+            <nav class="navigation">
+                <div class="nav-wrapper">
+                    <!-- <img class="brand-logo" src="{% static 'RD4F/img/logo3.jpg' %}" alt="Logo"> -->
+                    <div class="brand-logo center">Lucas Robidou</div>
+                </div>
+            </nav>
+        </div>
+
+        <ul id="tabs-r-w-pt-choice" class="tabs chapter center tabs-fixed-width">
+            <li class="tab col s3 chapter"><a class="chapter" href="#Read">Home</a></li>
+            <li class="tab col s3 chapter"><a class="chapter" href="#Write">Research Topics</a></li>
+            <li class="tab col s3 chapter"><a class="chapter" href="#Post-traitement">Publications</a></li>
+        </ul>
+    </header>
+
+    <main class="mymain">
+        <div id="Read" class="onglet col s12">
+            <div class="container">
+                <div class="row">
+                    <div class="col s6">
+                        <h5>Présentation</h5>
+                        <p>Docotrant à l'INRIA - Rennes</p>
+                        <p>Équipe <a href="https://team.inria.fr/genscale">Genscale</a></p>
+                        <p>E-mail : lucas dot robidou at inria dot fr</p>
+                        <p><a href="https://www.linkedin.com/in/lucas-robidou">LinkedIn</a></p>
+                        <p>Campus universitaire de Beaulieu<br>Avenue du Général Leclerc<br>35042 RENNES Cedex – France</p>
+                    </div>
+                    <div class="col s6 textAlignRight">
+                        <h5>Presentation</h5>
+                        <p>PhD Student at INRIA - Rennes</p>
+                        <p>Team: <a href="https://team.inria.fr/genscale">Genscale</a></p>
+                        <p>Mail: lucas dot robidou at inria dot fr</p>
+                        <p><a href="https://www.linkedin.com/in/lucas-robidou">LinkedIn</a></p>
+                        <p>Beaulieu university campus<br>Avenue du Général Leclerc<br>35042 RENNES Cedex – France</p>
+                    </div>
+
+                    <div class="col s12 divider"></div>
+
+                    <!-- <div class="col s6">
+                        <h5>xx</h5>
+                        <p>Docotrant à l'INRIA - Rennes</p>
+                        <p>Équipe <a href="https://team.inria.fr/genscale">Genscale</a></p>
+                        <p>E-mail : lucas dot robidou at inria dot fr</p>
+                        <p><a href="https://www.linkedin.com/in/lucas-robidou">LinkedIn</a></p>
+                        <p>Campus universitaire de Beaulieu<br>Avenue du Général Leclerc<br>35042 RENNES Cedex – France</p>
+                    </div>
+                    <div class="col s6 textAlignRight">
+                        <h5>yy</h5>
+                        <p>PhD Student at INRIA - Rennes</p>
+                        <p>Team: <a href="https://team.inria.fr/genscale">Genscale</a></p>
+                        <p>Mail: lucas dot robidou at inria dot fr</p>
+                        <p><a href="https://www.linkedin.com/in/lucas-robidou">LinkedIn</a></p>
+                        <p>Beaulieu university campus<br>Avenue du Général Leclerc<br>35042 RENNES Cedex – France</p>
+                    </div> -->
+                </div>
+                
+
+            </div>
+            <div class="vdivider"></div>
+
+        </div>
+
+        <div id="Write" class="onglet col s12">
+            <div class="completelyCentered">
+                This section is still empty...
+            </div>
+        </div>
+
+        <div id="Post-traitement" class="onglet col s12">
+            <div class="completelyCentered">
+                This section is still empty...
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="myfooter">
+        Source at <a href="https://github.com/Ribodou/ribodou.github.io">https://github.com/Ribodou/ribodou.github.io</a>
+    </footer>
+
+
+    <script>
+        function myresize() {
+            let height = $(window).height() - $('.myheader').height() - $('.myfooter').height();
+            $(".mybody").css('height', height);
+        }
+        $(window).on('resize', myresize);
+
+        $(document).ready(function () {
+            myresize();
+            $(".mybody").css('margin-top', $('.myheader').height());
+            $(".mybody").css('margin-bottom', $('.myfooter').height());
+            $('#tabs-r-w-pt-choice').tabs();
+            $('#tabs-r-w-pt-choice').tabs();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+html, body {
+    /* overflow: auto; */
+    height:100%;
+    width: 100%;
+}
+
+.navigation, footer {
+    background-color: #0f2233;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.completelyCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.vdivider{
+    position:absolute;
+    left:50%;
+    top:3%;
+    bottom:3%;
+    border-left:1px solid black;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:50px;
+    position: fixed;
+    background: /*#ad9179;*/ #2f72ad;
+    z-index: 10;
+}
+
+footer a {
+    color: #FF0000;
+}
+
+.pdf {
+    height: 100%;
+    margin-left: 390px;
+    width: 100%;
+}
+
+.textAlignRight {
+    text-align : right;
+}
+
+.onglet {
+    height:100%;
+    width: 100%;
+} 
+
+
+/* Split the screen in half */
+.mysplit {
+    height: 100%;
+    position: fixed;
+    /* z-index: 1; */
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+}
+  
+
+.myleft {
+    left: 0;
+    width: 20%;
+    background-color: rgba(17, 17, 17, 0.404);
+}
+
+
+.myright {
+    right: 0;
+    width: 80%;
+    /* background-color: red; */
+}
+
+
+
+.tabs .tab a{
+    color:#0f2233;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:rgba(38, 84, 235, 0.514);/*rgb(38, 163, 235);*/
+    color:#0f2233;/*:#fff;*/
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#0f2233;
+    color:#fff;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color:rgb(26, 65, 192);
+} /*Color of underline*/
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.col .row .no-margin {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-marging-left {
+    margin-left: 0;
+}
+
+.no-marging-right {
+    margin-right : 0px;
+}
+
+
+
+.no-padding-left {
+    padding: 0 0.75rem 0 0;
+}
+
+.no-padding {
+    padding: 0 0 0 0;
+}
+
+
+.eighty-height {
+    height: 80%;
+}
+
+.plot-container {
+    height: 100%;
+}
+
+
+.tabs-vertical .tabs {
+    height: auto;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.tabs-vertical .tab {
+    width: 100%;
+}
+
+.tabs-vertical .tab .active {
+    -moz-transition: border-color 0.5s ease;
+    -o-transition: border-color 0.5s ease;
+    -webkit-transition: border-color 0.5s ease;
+    transition: border-color 0.5s ease;
+    /* border-right: 3px solid #424242; */
+}
+
+.tabs-vertical .tab :hover {
+    border-right: 0px solid #eeeeee;
+}
+
+.tabs-vertical .indicator {
+    display: none;
+}
+
+.centrage {text-align: center;}
+
+
+.modal .modal-content {
+    padding: 0;
+    line-height: 0;
+}
